@@ -31,5 +31,10 @@
 </details>
 
 ### ■再現手順
+<details>
+<summary>訓練</summary>
+<div>
 
+</div>
+</details>
 
