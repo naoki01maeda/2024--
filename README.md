@@ -8,7 +8,7 @@
   
 論文執筆関連のファイルを収録
 
-- ** texファイル(main.tex) **
+- __texファイル(main.tex) __
   - 論文の本文をtex言語で記述したテキストファイル
     
 - styファイル(mthesis.tex)
