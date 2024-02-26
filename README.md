@@ -2,8 +2,10 @@
 
 ### フォルダやファイルの説明
 
-#### paper フォルダ
-
+<details>
+<summary>paperフォルダ</summary>
+<div>
+  
 論文執筆関連のファイルを収録
 
 - texファイル(main.tex)
@@ -16,15 +18,18 @@
 - bibファイル(refs.bib)
   - 参考文献を一括管理するためのファイル
   - main.texで呼び出される
+  - 
+</div>
+</details>
 
-#### code フォルダ
-
-
-### 再現手順
 
 <details>
-<summary> #### paperフォルダ</summary>
+<summary>codeフォルダ</summary>
 <div>
 
 </div>
 </details>
+
+### 再現手順
+
+
