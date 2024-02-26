@@ -4,7 +4,7 @@
 
 論文執筆関連のファイルを収録
 
-- texファイル(main.tex)
+- texファイル(*main.tex*)
   - 論文の本文をtex言語で記述したテキストファイル
     
 - styファイル(mthesis.tex)
