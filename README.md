@@ -11,14 +11,14 @@
 - __texファイル(main.tex)__
   - 論文の本文をtex言語で記述したテキストファイル
     
-- styファイル(mthesis.tex)
+- __styファイル(mthesis.tex)__
   - texファイルから出力される文書のスタイルやレイアウトの設定を記述したファイル
   - main.texで呼び出される
     
-- bibファイル(refs.bib)
+- __bibファイル(refs.bib)__
   - 参考文献を一括管理するためのファイル
   - main.texで呼び出される
-  - 
+    
 </div>
 </details>
 
