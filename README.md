@@ -31,8 +31,16 @@
 </details>
 
 ### ■再現手順
+
 <details>
 <summary>訓練</summary>
+<div>
+
+</div>
+</details>
+
+<details>
+<summary>推論</summary>
 <div>
 
 </div>
