@@ -3,10 +3,6 @@
 <img width="600" alt="モデル図" src="https://github.com/naoki01maeda/2024-maeda/assets/98692841/b0fcb92f-966a-401e-856d-091b31dd134a">
 <img width="679" alt="出力例" src="https://github.com/naoki01maeda/2024-maeda/assets/98692841/a758c736-2ebe-4a16-8633-b56b48a91b62">
 
-details > details,
-details > div {
-  padding-left: 16px;
-}
 
 ### ■フォルダやファイルの説明
 
