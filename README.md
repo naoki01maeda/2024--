@@ -4,7 +4,6 @@
 <img width="679" alt="出力例" src="https://github.com/naoki01maeda/2024-maeda/assets/98692841/a758c736-2ebe-4a16-8633-b56b48a91b62">
 
 
-
 ### ■フォルダやファイルの説明
 
 <details>
@@ -72,7 +71,32 @@
 
 - __カッパ係数を算出するファイル(kappa.ipynb)__
   - すべてのアノテータの組み合わせで一致度を算出する
+    
+<details>
+<summary>datasetフォルダ</summary>
+<div>
 
+- __annotation_dataフォルダ__
+  - すべてのアノテータのデータを収録
+
+- __kappaフォルダ__
+  - すべてのアノテータの一致度を算出するために使用した運転シーンやアノテーションデータを収録
+
+</div>
+</details>
+
+<details>
+<summary>requirementsフォルダ</summary>
+<div>
+
+- __condaコマンドでインストールしたライブラリを示したファイル(conda_requirements.txt)__
+
+
+- __pipコマンドでインストールしたライブラリを示したファイル(pip_requirements.txt)__
+
+
+</div>
+</details>
 
 </div>
 </details>
