@@ -39,7 +39,7 @@
 <details>
 <summary>訓練</summary>
 <div>
-
+<img width="600" alt="出力例" src="https://github.com/naoki01maeda/2024-maeda/assets/98692841/04150e24-2341-4077-94ad-91410a4a6756">
 </div>
 </details>
 
