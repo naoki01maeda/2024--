@@ -1,6 +1,7 @@
 ## 物体間の関係性を考慮した車載カメラ画像からのリスク要因推定
 
 <img width="563" alt="モデル図" src="https://github.com/naoki01maeda/2024-maeda/assets/98692841/b0fcb92f-966a-401e-856d-091b31dd134a">
+<img width="692" alt="出力例" src="https://github.com/naoki01maeda/2024-maeda/assets/98692841/04150e24-2341-4077-94ad-91410a4a6756">
 
 
 ### ■フォルダやファイルの説明
