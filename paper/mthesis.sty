@@ -1,0 +1,242 @@
+%大野版修士論文スタイルファイル ver 1.1
+%ver 1.0 2016/12/30作成
+%ver 1.1 2017/1/11
+%  表紙の修正
+%  section, subsection, subsubsection環境の変更
+%  mthebibliography環境の追加
+%ver 1.2 2017/1/19
+%  表紙の修正
+%ver 1.3
+%微修正
+%ver 1.4 2019/1/31
+%目次ページが複数ページにわたるときにページ番号が表示されてしまうのを修正
+%
+% ver 1.5 大橋卯香(川嶋研)
+% wordのテンプレートフォーマットに合わせるように調整
+% - マージンを30mmに固定
+% - 文章間の余白を倍率1.3に調整
+% - Chapter, Section, Subsectionのフォントサイズ、余白を調整
+% - Titleの形式を最新版のwordテンプレートに沿って訂正
+%     -  main.texに`\madvisor{NAME}`で担当教員の名前 + 空白 + (教授 or 准教授)を記入してください(挿入場所は\sbmtdateの下あたり)
+% ver 1.6 川嶋
+% - baselinestretch を 1.4へ
+% - 目次にはローマ数字でページ番号を追加
+
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+
+\ifjaponais
+\newcommand{\ackname}{謝辞}
+\newcommand{\mabstname}{概　要}
+\else
+\newcommand{\ackname}{Acknowledgment}
+\newcommand{\mabstname}{Abstract}
+\fi
+
+%変数
+\def\mtitle#1{\gdef\@mtitle{#1}}
+\def\msubtitle#1{\gdef\@msubtitle{#1}}
+\def\mid#1{\gdef\@mid{#1}}
+\def\mauthor#1{\gdef\@mauthor{#1}}
+\def\sbmtdate#1{\gdef\@sbmtdate{#1}}
+\def\madvisor#1{\gdef\@madvisor{#1}}
+
+%余白
+%縦
+% \setlength{\textheight}{\paperheight}
+% \setlength{\topmargin}{9.6truemm}
+% \addtolength{\topmargin}{-\headheight}
+% \addtolength{\topmargin}{-\headsep}
+% \addtolength{\textheight}{-65truemm}
+% %横
+% \setlength{\textwidth}{\paperwidth}
+% \setlength{\oddsidemargin}{9.6truemm}
+% \setlength{\evensidemargin}{-0.4truemm}
+% \addtolength{\textwidth}{-60truemm}
+
+%欧文をTimesに
+\renewcommand{\rmdefault}{qtm}
+
+%Maketitle
+\def\maketitle{\par
+   \begingroup
+   \@maketitle
+   \endgroup
+}
+
+\def\@maketitle{
+\begingroup
+\setlength{\baselineskip}{18pt}
+\thispagestyle{empty}
+\vspace*{2cm}
+\begin{center}
+   \begingroup
+      \renewcommand{\rmdefault}{qhv}%欧文をArial
+      \ifjaponais
+         {\fontsize{18.0pt}{19.0pt}\selectfont
+         2023年度 修士論文}\\
+         \ \\
+         \vspace*{1cm}
+         {\fontsize{22.0pt}{19.0pt}\selectfont
+            {\gt\@mtitle}\\
+         }
+         {\fontsize{22pt}{19.0pt}\selectfont
+            {\gt\@msubtitle}\\
+         }
+         \ \\
+         \vspace*{3cm}
+         {\fontsize{14pt}{18pt}\selectfont
+            {兵庫県立大学 大学院}\\
+         }
+         {\fontsize{14pt}{18pt}\selectfont
+            {情報科学研究科 データ計算科学専攻}\\
+         }
+         \vspace*{1cm}
+         {\fontsize{16pt}{0.85cm}\selectfont \@mid \\ \@mauthor}\\
+         \vspace*{1cm}
+         {\fontsize{14pt}{0.85cm}\selectfont \@sbmtdate \ \ 提出 \\ 指導教員 \ \ \@madvisor}\\
+      \else
+         {\fontsize{18.0pt}{19.0pt}\selectfont
+         Master Thesis (FY2022)}\\
+         \ \\
+         \vspace*{1cm}
+         {\fontsize{16.06pt}{19.0pt}\selectfont
+            {\@mtitle}\\
+         }
+         {\fontsize{14pt}{19.0pt}\selectfont
+            {\@msubtitle}\\
+         }
+         \ \\
+         \vspace*{3cm}
+         {\fontsize{16pt}{18pt}\selectfont
+            {Department of Data and Computational Science}\\
+         }
+         {\fontsize{14pt}{18pt}\selectfont
+            {Graduate School of Information Science}\\
+         }
+         {\fontsize{16.06pt}{18pt}\selectfont
+            {University of Hyogo}\\
+         }
+         \vspace*{1cm}
+         {\fontsize{16pt}{0.85cm}\selectfont \@mid \\ \@mauthor}\\
+         \vspace*{1cm}
+         {\fontsize{14pt}{0.85cm}\selectfont
+            {Date of submission: \@sbmtdate \\ Advisor: \ \ \@madvisor}\\
+         }
+      \fi
+   \endgroup
+\end{center}
+\endgroup
+\clearpage
+\thispagestyle{empty}
+\
+\clearpage
+}
+
+% http://www.my-chicken-heart.com/2007/12/jsarticlesectioncaptionx.html
+
+%Section後の縦スペースを縮める+section, subsection, subsubsectionのフォントサイズを同一にする。jarticle.clsおよび
+%article.clsから該当部分をコピペし改変
+\ifjaponais
+\renewcommand{\section}{\clearpage\@startsection{section}{1}{\z@}%
+   {2.0\Cvs}% 上幅
+   {1.5\Cvs}% 下幅
+   {\fontsize{18pt}{0pt}\selectfont\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+   {1.5\Cvs}%
+   {1.2\Cvs}%
+   {\fontsize{15pt}{0pt}\selectfont\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
+   {1.0\Cvs}%
+   {0.5\Cvs}%
+   {\fontsize{12pt}{0pt}\selectfont\bfseries}}
+\else
+\renewcommand\section{\clearpage\@startsection{section}{1}{\z@}
+   {2.0\Cvs}% 上幅
+   {1.5\Cvs}% 下幅
+   {\fontsize{18pt}{0pt}\selectfont\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+   {1.5\Cvs}%
+   {1.2\Cvs}%
+   {\fontsize{15pt}{0pt}\selectfont\bfseries}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+   {1.0\Cvs}%
+   {0.5\Cvs}%
+   {\fontsize{12pt}{0pt}\selectfont\bfseries}}
+\fi
+
+% 行間を変える(wordと同じならだいたい1.1)
+% memo: 川嶋先生提出時(2022/12/2)は1.2
+%
+%\renewcommand{\baselinestretch}{1.3}
+\renewcommand{\baselinestretch}{1.4}
+
+%Section番号の後にピリオドを表示させる
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+%奇数ページ起こし用cleardoublepage
+\def\mcleardoublepage{
+\clearpage
+\ifodd\c@page
+\else
+\thispagestyle{empty}
+\ \\
+\clearpage
+\fi
+}
+
+%アブストラクト+目次+ページ番号リセット
+\newenvironment{mabstract}{
+   \pagestyle{empty}
+   \vspace*{\stretch{1}}
+   \begin{center}
+      \textbf{\mabstname}
+   \end{center}
+}
+{
+   \vspace{\stretch{2}}
+   \clearpage
+   %\pagestyle{empty}
+   \
+   \clearpage\setcounter{page}{0}\pagenumbering{roman}\pagestyle{plain}
+   \tableofcontents%目次
+   \mcleardoublepage
+   \listoffigures
+   \mcleardoublepage
+   \listoftables
+   \mcleardoublepage
+   %\clearpage
+   \pagestyle{footnombre}
+   \setcounter{page}{1}\pagenumbering{arabic}%ページリセット
+}
+
+% 謝辞環境の作成
+\newenvironment{acknowledgment}{%
+  \clearpage
+  \addcontentsline{toc}{section}{\ackname}
+  \section*{\ackname}
+}{
+  \clearpage
+}
+
+% 参考文献環境の作成
+
+\newenvironment{mthebibliography}[1]{
+ \addcontentsline{toc}{section}{\refname}%目次に載せる
+ \begin{thebibliography}{#1}
+}{
+ \end{thebibliography}
+}
+
+% マージンを30mmにする
+\usepackage[top=30truemm,bottom=30truemm,left=30truemm,right=30truemm]{geometry}
+
+% 20230114
+\makeatletter
+\newcommand{\ssssection}{\@startsection{paragraph}{4}{\z@}%
+  {0.5\Cvs}%
+  {0.25\Cvs}%
+  {\fontsize{11pt}{0pt}\selectfont\bfseries}
+}
+\makeatother
