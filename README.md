@@ -47,30 +47,30 @@
   - アノテーションで得られたデータおよび、yolov5で得られる検出データを使用して訓練する形に加工する
   - ラベル数削減や、アンダーサンプリングを行う
 
-- __(data_collection_software.ipynb)__
-  - データ取集で使用するアノテーションソフト
+- __データ取集で使用するアノテーションソフトのファイル(data_collection_software.ipynb)__
+  - tkinterで記述されたデータ取集で使用するアノテーションソフト
 
-- __(output_display.ipynb)__
+- __出力結果を表示するファイル(output_display.ipynb)__
   - 学習済みモデルを使用して評価値(f1, recall, precision)を出力する
   - 学習済みモデルを使用して、推論結果を画像として保存する
 
-- __(test_eval_summarize.ipynb)__
+- __総合的な評価値を算出するファイル(test_eval_summarize.ipynb)__
   - output_display.ipynbにより算出された評価値をすべて記述し、データ分割パターンごとの評価値の平均や標準偏差を出力する
 
-- __(clip_generate.ipynb)__
+- __運転シーンのクリップを作成するファイル(clip_generate.ipynb)__
   - DRAMAデータセットから運転シーンのクリップ(gif)を取り出し、新たに保存する
   - 保存されたクリップはデータ収集で使用される(データ収集以外は使用されない)
 
-- __(gif_to_mp4.ipynb)__
+- __gifからmp4に変換するファイル(gif_to_mp4.ipynb)__
   - clip_generate.ipynbにより保存された運転シーンのクリップgifファイルを、データ収集ソフトで使用するために、mp4に変換する
 
-- __(pkl_to_img.ipynb)__
+- __運転シーンの画像を作成するファイル(pkl_to_img.ipynb)__
   - 訓練で使用する運転シーンの画像を作成するためにDRAMAデータセットに収録されたpklファイルからimgファイルとして新たに保存する
 
-- __(anno_img_display.ipynb)__
+- __アノテーションされたデータを表示するファイル(anno_img_display.ipynb)__
   - データ収集で記録されたデータを表示する(boxの位置やラベル)
 
-- __(kappa.ipynb)__
+- __カッパ係数を算出するファイル(kappa.ipynb)__
   - すべてのアノテータの組み合わせで一致度を算出する
 
 
