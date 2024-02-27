@@ -109,6 +109,17 @@
 ### ■再現手順
 
 <details>
+<summary>前処理</summary>
+<div>
+
+データ収集、訓練、推論を行う前の前処理(必須)
+
+1. clip_generate.ipynbを実行して、DRAMAデータセットのcombinedフォルダに記録されたgifファイルで保存された運転シーンのデータをdrama_clipフォルダに保存する
+2. 
+</div>
+</details>
+
+<details>
 <summary>訓練</summary>
 <div>
 
