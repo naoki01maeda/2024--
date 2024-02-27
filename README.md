@@ -163,7 +163,9 @@
   
 2. 訓練を行う
 
-3.
+3.output_display.ipynbを実行して、各手法の評価値を算出、推論結果を画像として保存する
+
+4.test_eval_summarize.ipynbを実行して、データ分割パターンごとの評価値の平均や標準偏差を出力する
 
 </div>
 </details>
