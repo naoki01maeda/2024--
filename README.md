@@ -124,8 +124,33 @@
 </details>
 
 <details>
+<summary>データ収集</summary>
+<div>
+  
+運転シーンのクリップを使用してデータ収集を実施
+
+1. 前処理を行う
+
+2. data_collection_software.ipynbを実行して、データ収集画面を表示させる
+
+3. ./dataset/manual.pdfのデータ収集マニュアルに従いデータを収集する
+
+4. data_editing.ipynbを実行して訓練する形にデータを加工する
+
+</div>
+</details>
+
+<details>
 <summary>訓練</summary>
 <div>
+
+1. 前処理を行う
+
+2../requirements/conda_requirements.txtを使用して環境を構築
+
+3../requirements/pip_requirements.txtを使用して環境を構築
+
+4.main.pyを実行して訓練を開始する
 
 </div>
 </details>
@@ -133,6 +158,12 @@
 <details>
 <summary>推論</summary>
 <div>
+
+1. 前処理を行う
+  
+2. 訓練を行う
+
+3.
 
 </div>
 </details>
