@@ -148,11 +148,11 @@
 
 1. 前処理を行う
 
-2../requirements/conda_requirements.txtを使用して環境を構築
+2. ./requirements/conda_requirements.txtを使用して環境を構築
 
-3../requirements/pip_requirements.txtを使用して環境を構築
+3. ./requirements/pip_requirements.txtを使用して環境を構築
 
-4.main.pyを実行して訓練を開始する
+4. main.pyを実行して訓練を開始する
 
 </div>
 </details>
@@ -163,9 +163,9 @@
 
 推論の実施
 
-1. 前処理を行う
+1.前処理を行う
   
-2. 訓練を行う
+2.訓練を行う
 
 3.output_display.ipynbを実行して、各手法の評価値を算出、推論結果を画像として保存する
 
