@@ -144,6 +144,8 @@
 <summary>訓練</summary>
 <div>
 
+訓練の実施
+
 1. 前処理を行う
 
 2../requirements/conda_requirements.txtを使用して環境を構築
@@ -158,6 +160,8 @@
 <details>
 <summary>推論</summary>
 <div>
+
+推論の実施
 
 1. 前処理を行う
   
