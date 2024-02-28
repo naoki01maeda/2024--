@@ -114,13 +114,17 @@
 
 データ収集、訓練、推論を行う前の前処理(必須)
 
-1. clip_generate.ipynbを実行して、DRAMAデータセットのcombinedフォルダに記録されたgifファイルで保存された運転シーンのデータをdrama_clipフォルダに保存する
+1. ./requirements/conda_requirements.txtを使用して環境を構築
 
-2. gif_to_mp4.ipynbを実行して、drama_clipフォルダに保存されたgifファイルをmp4ファイルに変換する
+2. ./requirements/pip_requirements.txtを使用して環境を構築
 
-3. pkl_to_img.ipynbを実行して、DRAMAデータセットの運転シーンのデータが格納されたpklファイルを、jpgファイルに変換してdrama_imageフォルダに保存する
+3. clip_generate.ipynbを実行して、DRAMAデータセットのcombinedフォルダに記録されたgifファイルで保存された運転シーンのデータをdrama_clipフォルダに保存する
 
-4. data_editing.ipynbを実行して、訓練、推論をするためのデータを作成する
+4. gif_to_mp4.ipynbを実行して、drama_clipフォルダに保存されたgifファイルをmp4ファイルに変換する
+
+5. pkl_to_img.ipynbを実行して、DRAMAデータセットの運転シーンのデータが格納されたpklファイルを、jpgファイルに変換してdrama_imageフォルダに保存する
+
+6. data_editing.ipynbを実行して、訓練、推論をするためのデータを作成する
 
 </div>
 </details>
@@ -149,11 +153,7 @@
 
 1. 前処理を行う
 
-2. ./requirements/conda_requirements.txtを使用して環境を構築
-
-3. ./requirements/pip_requirements.txtを使用して環境を構築
-
-4. main.pyを実行して訓練を開始する
+2. main.pyを実行して訓練を開始する
 
 </div>
 </details>
