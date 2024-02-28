@@ -34,7 +34,7 @@
 
 
 <details>
-<summary>codeフォルダ</summary>
+<summary>code_and_datasetフォルダ</summary>
 <div>
   
 研究で使用したコード、データセットを収録
