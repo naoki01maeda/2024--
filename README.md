@@ -114,23 +114,23 @@
 
 データ収集、訓練、推論を行う前の前処理(必須)
 
-1. ./requirements/conda_requirements.txtを使用して環境を構築
+1. __./requirements/conda_requirements.txtを使用して環境を構築__
 
-2. ./requirements/pip_requirements.txtを使用して環境を構築
+2. __./requirements/pip_requirements.txtを使用して環境を構築__
 
-3. clip_generate.ipynbを実行して、DRAMAデータセットのcombinedフォルダに記録されたgifファイルで保存された運転シーンのデータをdrama_clipフォルダに保存する
+3. __clip_generate.ipynbを実行して、DRAMAデータセットのcombinedフォルダに記録されたgifファイルで保存された運転シーンのデータをdrama_clipフォルダに保存する__
 
     実行するとdatasetフォルダ下に、以下のフォルダ
      - drama_clip(運転シーンのクリップの各フレームが保存されたフォルダ)
 
-4. gif_to_mp4.ipynbを実行して、drama_clipフォルダに保存されたgifファイルをmp4ファイルに変換する
+4. __gif_to_mp4.ipynbを実行して、drama_clipフォルダに保存されたgifファイルをmp4ファイルに変換する__
 
-5. pkl_to_img.ipynbを実行して、DRAMAデータセットの運転シーンのデータが格納されたpklファイルを、jpgファイルに変換してdrama_imageフォルダに保存する
+5. __pkl_to_img.ipynbを実行して、DRAMAデータセットの運転シーンのデータが格納されたpklファイルを、jpgファイルに変換してdrama_imageフォルダに保存する__
 
     実行するとdatasetフォルダ下に、以下のフォルダ
      - drama_image(運転シーンの画像が保存されたフォルダ)
     
-7. data_editing.ipynbを実行して、訓練、推論をするためのデータを作成する
+6. __data_editing.ipynbを実行して、訓練、推論をするためのデータを作成する__
 
     実行するとdatasetフォルダ下に、以下のフォルダ、ファイルが作成される
    
