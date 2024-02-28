@@ -120,6 +120,8 @@
 
 3. pkl_to_img.ipynbを実行して、DRAMAデータセットの運転シーンのデータが格納されたpklファイルを、jpgファイルに変換してdrama_imageフォルダに保存する
 
+4. data_editing.ipynbを実行して、訓練、推論をするためのデータを作成する
+
 </div>
 </details>
 
@@ -135,7 +137,6 @@
 
 3. ./dataset/manual.pdfのデータ収集マニュアルに従いデータを収集する
 
-4. data_editing.ipynbを実行して訓練する形にデータを加工する
 
 </div>
 </details>
