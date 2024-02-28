@@ -181,6 +181,8 @@
 
    実行すると学習が開始され、以下のファイルが作業ディレクトリに作成される
      - log(学習済みの重みおよび、学習ごとの評価値の推移が記録される)
+     - 
+<img width="621" alt="再現性表" src="https://github.com/naoki01maeda/2024-maeda/assets/98692841/f8291ea5-6dd5-4b12-a15a-2b876941e5cc">
 
 </div>
 </details>
