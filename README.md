@@ -197,13 +197,13 @@
 
 3. __output_display.ipynbを実行して、各手法の評価値を算出、推論結果を画像として保存する__
 
-  訓練によりlogフォルダに保存された各手法のデータを可視化する
+    訓練によりlogフォルダに保存された各手法のデータを可視化する
 
-  推論結果を画像として保存する際、作業ディレクトリに以下のフォルダが作成される
-    - output(推論結果を画像として保存される)
-      - output_test_data(0.5を閾値とした結果を表示)
-      - output_test_data_sig(予測値をそのまま表示)
-      - output_test_data_att(提案手法で使用されるTransformerのMHAattentionmapを表示)
+    推論結果を画像として保存する際、作業ディレクトリに以下のフォルダが作成される
+      - output(推論結果を画像として保存される)
+        - output_test_data(0.5を閾値とした結果を表示)
+        - output_test_data_sig(予測値をそのまま表示)
+        - output_test_data_att(提案手法で使用されるTransformerのMHAattentionmapを表示)
 
 4. __test_eval_summarize.ipynbを実行して、データ分割パターンごとの評価値の平均や標準偏差を出力する__
 
