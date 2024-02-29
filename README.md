@@ -112,19 +112,27 @@
 
 2. __./requirements/pip_requirements.txtを使用して環境を構築__
 
-3. __clip_generate.ipynbを実行して、DRAMAデータセットのcombinedフォルダに記録されたgifファイルで保存された運転シーンのデータをdrama_clipフォルダに保存する__
+3. __DRAMAデータセットが格納された以下の写真のドライブを自PCに接続し、drama_data2/processed/trainというフォルダ内のpklデータをdatasetフォルダにコピーする__
 
-    実行するとdatasetフォルダ下に、以下のフォルダ
+     ![IMG_20240229_091833](https://github.com/naoki01maeda/2024-maeda/assets/98692841/4e6758dc-661c-415a-9e31-65f1a36c6538)
+
+     コピー先のフォルダ名をpkl_dataにする必要あり
+
+4. __DRAMAデータセットが格納された以下の写真のドライブを自PCに接続し、clip_generate.ipynbを実行して、DRAMAデータセットのcombinedフォルダに記録されたgifファイルで保存された運転シーンのデータをdrama_clipフォルダに保存する__
+
+    ![IMG_20240229_091850](https://github.com/naoki01maeda/2024-maeda/assets/98692841/45f4dcbb-570c-4e61-bd6d-639204b1dc4d)
+
+    実行するとdatasetフォルダ下に、以下のフォルダが作成される
      - drama_clip(運転シーンのクリップの各フレームが保存されたフォルダ)
 
-4. __gif_to_mp4.ipynbを実行して、drama_clipフォルダに保存されたgifファイルをmp4ファイルに変換する__
+5. __gif_to_mp4.ipynbを実行して、drama_clipフォルダに保存されたgifファイルをmp4ファイルに変換する__
 
-5. __pkl_to_img.ipynbを実行して、DRAMAデータセットの運転シーンのデータが格納されたpklファイルを、jpgファイルに変換してdrama_imageフォルダに保存する__
+6. __pkl_to_img.ipynbを実行して、DRAMAデータセットの運転シーンのデータが格納されたpklファイルを、jpgファイルに変換してdrama_imageフォルダに保存する__
 
     実行するとdatasetフォルダ下に、以下のフォルダ
      - drama_image(運転シーンの画像が保存されたフォルダ)
     
-6. __data_editing.ipynbを実行して、訓練、推論をするためのデータを作成する__
+7. __data_editing.ipynbを実行して、訓練、推論をするためのデータを作成する__
 
     実行するとdatasetフォルダ下に、以下のフォルダ、ファイルが作成される
    
